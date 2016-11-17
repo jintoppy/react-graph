@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/react-graph.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --colors",
+    "start": "webpack-dev-server",
     "watch": "webpack --watch --watch-poll",
     "postbuild": "NODE_ENV=production TARGET=minify webpack --config webpack.prod.config.js",
     "prebuild": "rm -rf dist && mkdir dist",
