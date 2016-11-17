@@ -2,10 +2,15 @@
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/react-graph.js",
   "scripts": {
-    "start": "webpack && open index.html",
-    "watch": "webpack --watch --watch-poll"
+    "start": "webpack-dev-server --hot --progress --colors",
+    "watch": "webpack --watch --watch-poll",
+    "postbuild": "NODE_ENV=production TARGET=minify webpack --config webpack.prod.config.js",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "prepublish": "npm run build",
+    "build:lib": "babel src --out-dir lib",
+    "build": "npm run build:lib && NODE_ENV=production webpack --config webpack.prod.config.js"
   },
   "keywords": [],
   "author": "Jinto Jose <jintoppy@gmail.com>",

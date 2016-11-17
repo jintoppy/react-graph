@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
-import GraphWidget from './GraphWidget';
+import ReactDOM from 'react-dom';
+import GraphWidget from '../src/GraphWidget';
 
-export default class App extends Component{
+console.log("withing the index.js");
+class App extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -10,7 +12,7 @@ export default class App extends Component{
             yAxisWidth: 100,
             priceBarHeight: 50,
             layout: [20,60,20],
-            top4pp: [13.99, 14.99, 16.99, 18.99],
+            top4pp: [13.89, 14.99, 16.99, 18.99],
             tiers: {
                 "Tier1": [
                     {
@@ -74,10 +76,16 @@ export default class App extends Component{
     }
     render(){
         return (
-                <GraphWidget 
+            <GraphWidget 
                         {...this.state} 
                         onPriceChange={this.onPriceChange.bind(this)} 
                 />
+
         )
     }
 }
+console.log("sdf");
+ReactDOM.render(
+  <App />,
+  document.getElementById('container')
+)

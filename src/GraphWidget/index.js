@@ -1,3 +1,4 @@
+console.log('within GraphWidget');
 import React,{Component} from 'react';
 import graphWidgetStyle from './index.css';
 import Background from './Background';

@@ -1,21 +1,31 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require('path');
 module.exports = {
-    entry: './src',
+    context: __dirname,
     devtool: 'source-map',
+    entry: {
+        index: './example/index.js'
+    },
     output: {
-        path: 'build',
+        path: './example',
         filename: 'bundle.js'
+    },
+    devServer: {
+        contentBase: './example',
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
     },
     module: {
         loaders: [
             {
-                test: /\.js/,
+                test: /\.(js|jsx)/,
                 loader: 'babel',
-                include: __dirname + '/src'
+                include: [__dirname + '/example',__dirname + '/src']
             },
             {
                 test: /\.css/,
-                loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
+                loaders: ['style?sourceMap','css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]']
             }, 
             {
                 test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
