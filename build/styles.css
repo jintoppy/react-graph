@@ -1,0 +1,47 @@
+.index__main___3rkm_{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    align-content: stretch;
+    width: 100%;
+    overflow: hidden;
+}
+
+.index__main___3rkm_,.index__main___3rkm_ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}.index__main___Fgf7s{   
+}
+.index__dayCol___3iPZR {
+    border-left: 1px solid #d4d4d4;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    border-right: none;
+    display: inline-block;
+    height: 100%;
+    max-width: 250px;
+}
+.index__yAxis___107-u{
+    background-color: yellow;
+}
+.index__colWrapper___285YZ{
+    flex: 1;
+    overflow-x: auto;
+    height: 100%;
+}
+
+.index__colScrollWrapper___2td-c{
+    height: 100%;
+    white-space: nowrap;
+}.index__main___17xzn{
+    position: absolute;
+}.index__main___3CL1S{
+    position: absolute;
+}.index__main___35bUv{
+    position: absolute;
+}
+/*# sourceMappingURL=styles.css.map*/
