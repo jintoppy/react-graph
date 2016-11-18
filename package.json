@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "watch": "webpack --watch --watch-poll",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --require test/helpers/setup.js -w test/helpers/browser.js test/**/*.spec.js"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --require test/helpers/setup.js -w test/helpers/browser.js 'test/**/*.spec.js'"
   },
   "keywords": [],
   "author": "Jinto Jose <jintoppy@gmail.com>",
@@ -29,6 +29,7 @@
     "file-loader": "^0.9.0",
     "istanbul": "1.0.0-alpha.2",
     "jsdom": "^9.8.3",
+    "lodash": "^4.17.2",
     "mocha": "^3.1.2",
     "react-addons-test-utils": "^15.4.0",
     "sinon": "^1.17.6",
@@ -41,6 +42,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "css-modules-require-hook": "^4.0.5",
     "font-awesome": "^4.7.0",
+    "moment": "^2.16.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },

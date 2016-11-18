@@ -6,10 +6,10 @@ class App extends Component{
     constructor(props){
         super(props);
 
-        this.newState = {
+        this.state = {
             event: {
-                startDate: '',
-                endDate: ''
+                startDate: '2016-11-19',
+                endDate: '2016-11-29'
             },
             uiConfig: {
                 col: {
@@ -20,7 +20,7 @@ class App extends Component{
             }
         };
 
-        this.state = {
+        this.oldState = {
             noOfDays: 7,
             minColWidth: 20,
             yAxisWidth: 100,
