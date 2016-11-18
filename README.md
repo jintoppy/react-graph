@@ -1,4 +1,7 @@
-To run - npm start
+##React Graph
+[Build](https://travis-ci.org/jintoppy/react-graph.svg?branch=master)
+
+##To run - npm start
 
 To trigger watch - npm run watch
 
@@ -13,7 +16,7 @@ yarn start
 To trigger watch - yarn run watch
 
 
-To run test
+##To run test
 
 npm run test
 
