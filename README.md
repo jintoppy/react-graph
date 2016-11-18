@@ -1,5 +1,5 @@
 ##React Graph
-![Build Status](https://octodex.github.com/images/yaktocat.png)
+![Build Status](https://travis-ci.org/jintoppy/react-graph.svg?branch=master)
 
 ##To run - npm start
 
