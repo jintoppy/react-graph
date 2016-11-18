@@ -8,7 +8,8 @@ module.exports = {
     },
     output: {
         path: './example',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        libraryTarget: 'commonjs2'
     },
     devServer: {
         contentBase: './example',

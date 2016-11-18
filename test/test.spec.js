@@ -1,5 +1,5 @@
 import React from 'react';
-import {expect} from 'chai';
+//import {expect} from 'chai';
 import { mount, shallow } from 'enzyme';
 
 import Trial from '../src/trial';
