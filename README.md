@@ -9,4 +9,4 @@ yarn install
 
 yarn start
 
-yarn run watch
+To trigger watch - yarn run watch
