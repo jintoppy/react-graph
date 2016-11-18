@@ -18,9 +18,11 @@
     flex: 1;
     overflow-x: auto;
     height: 100%;
+    position: relative;
 }
 
 .colScrollWrapper{
     height: 100%;
     white-space: nowrap;
+    position: absolute;    
 }

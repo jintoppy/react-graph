@@ -5828,7 +5828,7 @@
 	exports.i(__webpack_require__(175), undefined);
 	
 	// module
-	exports.push([module.id, ".index__main___2ep_U{   \n}\n.index__dayCol___1v3xV {\n    border-left: 1px solid #d4d4d4;\n    padding: 5px;\n    text-align: center;\n    position: relative;\n    border-right: none;\n    display: inline-block;\n    height: 100%;\n    max-width: 250px;\n}\n.index__yAxis___206_c{\n    background-color: yellow;\n}\n.index__colWrapper___3_67l{\n    flex: 1;\n    overflow-x: auto;\n    height: 100%;\n}\n\n.index__colScrollWrapper___uHDRV{\n    height: 100%;\n    white-space: nowrap;\n}", ""]);
+	exports.push([module.id, ".index__main___2ep_U{   \n}\n.index__dayCol___1v3xV {\n    border-left: 1px solid #d4d4d4;\n    padding: 5px;\n    text-align: center;\n    position: relative;\n    border-right: none;\n    display: inline-block;\n    height: 100%;\n    max-width: 250px;\n}\n.index__yAxis___206_c{\n    background-color: yellow;\n}\n.index__colWrapper___3_67l{\n    flex: 1;\n    overflow-x: auto;\n    height: 100%;\n    position: relative;\n}\n\n.index__colScrollWrapper___uHDRV{\n    height: 100%;\n    white-space: nowrap;\n    position: absolute;    \n}", ""]);
 	
 	// exports
 	exports.locals = {
