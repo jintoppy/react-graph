@@ -27,7 +27,7 @@ export default class Background extends Component {
         return (<div className={backgroundStyle.main}>
             <div style={{width: this.props.yAxisWidth}} className={backgroundStyle.yAxis}></div>
             <div className={backgroundStyle.colWrapper}>
-                <div className={backgroundStyle.colScrollWrapper} style={colScrollWrapperStyle}>
+                <div className={backgroundStyle.colScrollWrapper}>
                     {columns}
                 </div> 
             </div>

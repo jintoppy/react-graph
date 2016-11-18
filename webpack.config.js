@@ -13,8 +13,10 @@ module.exports = {
     devServer: {
         contentBase: './example',
     },
-    resolve: {
-        extensions: ['', '.js', '.jsx']
+    externals: {
+        'cheerio': 'window',
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true,
     },
     module: {
         loaders: [
@@ -51,5 +53,8 @@ module.exports = {
     },
     plugins: [
             new ExtractTextPlugin("styles.css")
-    ]
+    ],
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    }
 };

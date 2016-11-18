@@ -2,10 +2,24 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import GraphWidget from '../src/GraphWidget';
 
-console.log("withing the index.js");
 class App extends Component{
     constructor(props){
         super(props);
+
+        this.newState = {
+            event: {
+                startDate: '',
+                endDate: ''
+            },
+            uiConfig: {
+                col: {
+                    minWidth: 20,
+                    maxWidth: 30
+                },
+                yAxisWidth: 100,
+            }
+        };
+
         this.state = {
             noOfDays: 7,
             minColWidth: 20,
@@ -84,7 +98,6 @@ class App extends Component{
         )
     }
 }
-console.log("sdf");
 ReactDOM.render(
   <App />,
   document.getElementById('container')

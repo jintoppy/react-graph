@@ -24,5 +24,6 @@
 .colScrollWrapper{
     height: 100%;
     white-space: nowrap;
-    position: absolute;    
+    position: absolute;
+    width: 100%;    
 }

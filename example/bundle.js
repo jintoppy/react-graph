@@ -70,8 +70,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	console.log("withing the index.js");
-	
 	var App = function (_Component) {
 	    _inherits(App, _Component);
 	
@@ -79,6 +77,20 @@
 	        _classCallCheck(this, App);
 	
 	        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	
+	        _this.newState = {
+	            event: {
+	                startDate: '',
+	                endDate: ''
+	            },
+	            uiConfig: {
+	                col: {
+	                    minWidth: 20,
+	                    maxWidth: 30
+	                },
+	                yAxisWidth: 100
+	            }
+	        };
 	
 	        _this.state = {
 	            noOfDays: 7,
@@ -146,7 +158,6 @@
 	    return App;
 	}(_react.Component);
 	
-	console.log("sdf");
 	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('container'));
 
 /***/ },
@@ -5780,7 +5791,7 @@
 	                    { className: _index2.default.colWrapper },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: _index2.default.colScrollWrapper, style: colScrollWrapperStyle },
+	                        { className: _index2.default.colScrollWrapper },
 	                        columns
 	                    )
 	                )
@@ -5828,7 +5839,7 @@
 	exports.i(__webpack_require__(175), undefined);
 	
 	// module
-	exports.push([module.id, ".index__main___2ep_U{   \n}\n.index__dayCol___1v3xV {\n    border-left: 1px solid #d4d4d4;\n    padding: 5px;\n    text-align: center;\n    position: relative;\n    border-right: none;\n    display: inline-block;\n    height: 100%;\n    max-width: 250px;\n}\n.index__yAxis___206_c{\n    background-color: yellow;\n}\n.index__colWrapper___3_67l{\n    flex: 1;\n    overflow-x: auto;\n    height: 100%;\n    position: relative;\n}\n\n.index__colScrollWrapper___uHDRV{\n    height: 100%;\n    white-space: nowrap;\n    position: absolute;    \n}", ""]);
+	exports.push([module.id, ".index__main___2ep_U{   \n}\n.index__dayCol___1v3xV {\n    border-left: 1px solid #d4d4d4;\n    padding: 5px;\n    text-align: center;\n    position: relative;\n    border-right: none;\n    display: inline-block;\n    height: 100%;\n    max-width: 250px;\n}\n.index__yAxis___206_c{\n    background-color: yellow;\n}\n.index__colWrapper___3_67l{\n    flex: 1;\n    overflow-x: auto;\n    height: 100%;\n    position: relative;\n}\n\n.index__colScrollWrapper___uHDRV{\n    height: 100%;\n    white-space: nowrap;\n    position: absolute;\n    width: 100%;    \n}", ""]);
 	
 	// exports
 	exports.locals = {
