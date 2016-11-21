@@ -2,11 +2,13 @@
   "name": "graphwidget",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/react-graph.js",
+  "main": "dist/react-graph.js",
   "scripts": {
     "start": "webpack-dev-server",
     "watch": "webpack --watch --watch-poll",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --require test/helpers/setup.js -w test/helpers/browser.js 'test/**/*.spec.js'"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --require test/helpers/setup.js -w test/helpers/browser.js 'test/**/*.spec.js'",
+    "build": "npm run prebuild && webpack --config webpack.prod.config.js",
+    "prebuild": "rm -rf dist && mkdir dist"
   },
   "keywords": [],
   "author": "Jinto Jose <jintoppy@gmail.com>",
