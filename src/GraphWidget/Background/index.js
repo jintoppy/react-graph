@@ -5,7 +5,8 @@ import Calc from '../calc';
 const Background  = ({event,uiConfig}) => {
         let width = Calc.getColWidth(event, uiConfig.col);
         let colStyle = {
-            width: `${width}%`
+            width: `${width}%`,
+            maxWidth: `${uiConfig.col.maxWidth}%`
         };
         
         let noOfDays = Calc.getNoOfDays(event);

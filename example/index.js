@@ -9,7 +9,7 @@ class App extends Component{
         this.state = {
             event: {
                 startDate: '2016-11-19',
-                endDate: '2016-11-29'
+                endDate: '2016-11-25'
             },
             uiConfig: {
                 col: {
