@@ -8,8 +8,11 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
+        publicPath: 'dist/',
         filename: 'react-graph.js',
-        sourceMapFilename: 'react-graph.sourcemap.js'
+        sourceMapFilename: 'react-graph.sourcemap.js',
+        library: 'GraphWidget',
+        libraryTarget: 'umd'
     },
     devServer: {
         contentBase: './example',

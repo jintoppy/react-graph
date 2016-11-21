@@ -1,5 +1,5 @@
 {
-  "name": "graphwidget",
+  "name": "widget-promotion-graph",
   "version": "1.0.0",
   "description": "",
   "main": "dist/react-graph.js",
